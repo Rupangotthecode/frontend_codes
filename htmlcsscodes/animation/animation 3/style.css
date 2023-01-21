@@ -1,0 +1,32 @@
+.mover{
+    
+    height:200px;
+    width:55px;
+    animation: move 4s linear infinite alternate;
+}
+
+@keyframes move {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(640px,0,0);
+    }
+}
+
+.ball{
+    background-color: brown;
+    border: 2px solid black;
+    height :50px;
+    width: 50px;
+    border-radius: 100%;
+    animation: bounce 1s linear infinite alternate;
+}
+@keyframes bounce{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(0,150px,0);
+    }
+}

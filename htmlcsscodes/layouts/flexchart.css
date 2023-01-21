@@ -1,0 +1,34 @@
+.row{
+    display:flex;
+    align-items:stretch;
+}
+
+.row .label{
+    flex:0 0 auto;
+}
+
+.row .container{
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+}
+
+.row .dishes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza{
+    background-color: aqua;
+}
+
+.pasta{
+    background-color: brown;
+}
+
+.burrito{
+    background-color:blueviolet;
+    flex-basis: 15%;
+}
+

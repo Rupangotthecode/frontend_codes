@@ -1,0 +1,64 @@
+.body{
+    font-family: 'Trebuchet MS';
+}
+
+.heading{
+    color:coral;
+    text-decoration: underline;
+}
+
+.para{
+    background-color: aliceblue;
+    width: 204px;
+    border:2px solid coral;
+}
+
+.ellip{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ellip:hover{
+    overflow: visible;
+}
+
+.clp{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.clp:hover{
+    overflow: visible;
+}
+
+.ver{
+    writing-mode: vertical-rl;
+}
+
+.para.shadow{
+    background-color: black;
+    font-family: papyrus;
+    font-size: large;
+}
+
+.shad{
+    text-shadow: 0 0 30px green,0 0 6px white;
+}
+
+.para.turn{
+    height: 100px;
+    width: 100px;
+    margin-left: 90px;
+    text-align:center;
+    justify-content: center;
+}
+
+.para.turn:hover{
+    transform: rotate(25deg);
+    background-color:grey;
+    transition:1s;
+}
+
+

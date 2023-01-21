@@ -1,0 +1,71 @@
+/* Properties for other selectors */
+*{
+    font-family: Monaco;
+}
+.section{
+    padding:10px;
+}
+
+.label{
+    font-weight: bold;
+}
+
+.description{
+    font-style: italic;
+    border-top: 2px solid #495e57;
+}
+
+.item-name {
+    margin:25px;
+    font-size: 12px;
+}
+
+b{
+    float: right;
+    margin-top: -15px;
+    color:darkcyan;
+}
+
+.menu, .ll{
+    text-align: center;
+    color:#FA9F42;
+}
+
+.ll{
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #495E57;
+}
+
+.menu-container {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    background-color:#E0E0E2;
+}
+
+div>h3{
+    font-size: 20px;
+    margin:20px ;
+    text-align:center;
+}
+
+.label + .low{
+    color:brown;
+}
+/* 
+div ~div{
+    color:rgb(90, 90, 90);
+} */
+.menu-container{
+    color:rgb(90,90,90);
+}
+/* Add rules for the steps mentioned below */
+/* selector:
+"."-class
+"#"-id
+"tagname only"-certain tag live h tag, div tag etc
+"div h1"-select all h1 elements which are children of div elements.
+"div>h1"-select only those h1 elements which occur directly after div tags 
+".label~.low"-select all 'low' elements which are siblings of 'label elements'
+".label+.low"-select only those sibling 'low' elements which occur only immediately after label elements. */

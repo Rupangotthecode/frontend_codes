@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form generation</title>
+    </head>
+    <body>
+        <h1>Sign up!</h1>
+        <form id="signer">
+            <div>
+                <label for="ufn">First name</label><br>
+                <input type="text" id="ufn" name="first name" required>
+                
+            </div>
+            <div>
+                <label for="lfn">Last name</label><br>
+                <input type="text" id="lfn" name="last name" required minlength="3">
+                
+            </div>
+            <div>
+                <label for="pw">password</label><br>
+                <input type="password" id="pw" name="pswd" required minlength="3" maxlength="12">
+                
+            </div>
+            <div>
+                <label for="cnpw"> confirm password</label><br>
+                <input type="password" id="cnpw" name="cnpswd" required minlength="3" maxlength="12">
+                
+            </div><br>
+            <div>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+            </div><br>
+            <label for="flowers">Favourite flower:</label><br> 
+            <input list="flowers" name="flowers"> 
+            <datalist id="flowers"> 
+              <option value="Rose"> 
+              <option value="Lily"> 
+              <option value="Tulip"> 
+              <option value="Daffodil"> 
+              <option value="Orchid"> 
+            </datalist> 
+            <div>
+                <button type="submit" name="sign_in" value="sign in!" onclick="alert('click me baby')">Sign In</button>
+            </div>
+            <button type="button" onclick="alert('fuck me darling')">click me </button>
+        </form><br><br>
+        
+        <fieldset> 
+            <legend>Personal Info</legend> 
+            <label for="fname">First name:</label><br> 
+            <input type="text" id="fname" name="fname" value="John"><br> 
+            <label for="lname">Last name:</label><br> 
+            <input type="text" id="lname" name="lname" value="Doe"><br> 
+          </fieldset> 
+          
+          <fieldset> 
+            <legend>Qualificaiton</legend> 
+            <label for="pdegree">Primary degree:</label><br> 
+            <input type="text" id="pdegree" name="degree" value="Masters"><br> 
+            <label for="fos">Last name:</label><br> 
+            <input type="text" id="fos" name="field" value="Psychology"><br> 
+          </fieldset>
+
+        <style>
+            input:focus:invalid {
+                border: 2px solid red;
+                color:red;
+            }
+        </style>
+    </body>
+</html>

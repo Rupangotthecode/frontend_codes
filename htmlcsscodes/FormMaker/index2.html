@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Little Lemon</title>
+
+  <meta property="og:title" content="Our Menu">
+  <meta property="og:type"  content="website">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url"   content="https://littlelemon/">
+  <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Little Lemon">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png">
+    </header>
+    <main>
+        <div>
+            <h1>Book A Table!</h1>
+        </div>
+        <div>
+            <form method="POST">
+                <div>
+                    <label for="Gname">Name:</label><br>
+                    <input type="text" id="Gname" name="Guest_name" required><br>
+                </div>
+                <div>
+                    <label for="date">Date of reservation:</label><br>
+                    <input type="datetime-local" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="noG">Number of Guests:</label><br>
+                    <input type="datetime-local" name="no_of_guests" id="noG" required min="1" max="8" value="4" oninput="this.nextElementSibling.value=this.value">
+                    <output>4</output>
+                </div>
+                <div>
+                    <label for="loc">littlelemon Branch:</label><br>
+                    <input id="loc" name="location" list="Locations">
+                    <datalist id="Locations">
+                        <option value="uptown">Uptown</option>
+                        <option value="downtown">Downtown</option>
+                    </datalist>
+                </div>
+                <div>
+                    <button type="submit" value="booking confirmed">confirm</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
