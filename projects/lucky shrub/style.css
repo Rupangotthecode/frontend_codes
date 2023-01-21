@@ -1,0 +1,170 @@
+body{
+    background-color:rgba(229, 237, 191, 0.745);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header img{
+    align-self:center;
+}
+
+nav{
+    background-color: rgb(168, 234, 159);
+    border-radius: 20px;
+    margin-top:20px;
+    display: inline-flex;
+    height:70px;
+    align-items: center;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    flex:1 1 300px;
+    color: rgba(229, 237, 191, 0.745);
+    height: 70px;
+    
+}
+
+li button{
+    background-color:  rgb(168, 234, 159);
+    border:none;
+    color:rgba(40, 148, 46, 0.947);
+    transition-duration: 0.4s;
+    height: 70px;
+    width: auto;
+}
+
+li button:hover{
+    background-color: rgba(40, 148, 46, 0.947);
+    color:rgb(168, 234, 159);
+}
+
+.searchbar{
+    display: inline-flex;
+    flex:1 1 300px;
+    border-radius: 10px;
+    gap:2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(40, 148, 46, 0.947);
+    overflow:hidden;
+    height: 50px;
+    align-self: center;
+    margin-right:10px;
+    margin-left: 10px;
+}
+.icon{
+    padding: 15px;
+}
+.searchBox{
+    border:0;
+    flex:1;
+    background-color: rgb(168, 234, 159);
+    color:rgba(40, 148, 46, 0.947);
+}
+.searchButton{
+    color:rgba(40, 148, 46, 0.947);
+    background: rgb(168, 234, 159);
+    border:0;
+    padding:0.8rem;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+.searchButton:hover{
+    background-color: rgba(40, 148, 46, 0.947);
+    color:rgb(168, 234, 159);
+}
+
+.underline{
+    height:2px;
+    width:400px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+    background-color: rgba(40, 148, 46, 0.947);
+}
+
+.abt{
+    margin-bottom:0px;
+}
+
+h1{
+    color:rgba(40, 148, 46, 0.947);
+    text-align: center;
+    margin-top:20px;
+}
+
+.about{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(231, 244, 167, 0.745);
+}
+
+.des{
+    height: 3px;
+    width: 460px;
+}
+
+.maincont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.design{
+    display: inline-flex;
+    flex:1;
+     
+}
+
+article{
+    width:100%;
+    
+    transition-duration: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img{
+    margin:10px;
+    padding:4px;
+}
+
+article p{
+    margin: 10px;
+}
+
+.box1{
+    background-color: rgb(213, 247, 209);
+}
+.box2{
+    background-color: rgb(201, 240, 200);
+}
+.box3{
+    background-color: rgb(212, 246, 212);
+}
+
+article:hover{
+    transform: translate3d(4px,4px,0);
+    box-shadow: -10px -10px 5px rgba(169, 203, 166, 0.581);
+}
+
+footer{
+    margin:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer img{
+    margin:10px;
+}
